@@ -93,6 +93,7 @@ export const Navbar = () => {
             <GithubIcon className="text-default-500" />
           </Link>
         </NavbarItem>
+
         <NavbarItem className="hidden md:flex">
           <Link
             isExternal
@@ -106,10 +107,12 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+        <Link isExternal aria-label="Twitter" href={"https://bsky.app/profile/ucho-ten.net/"}>
+          <FontAwesomeIcon icon={faBluesky} className={"text-default-500"} />
+        </Link>
         <Link isExternal aria-label="Github" href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
-        <ThemeSwitch />
         <NavbarMenuToggle />
       </NavbarContent>
 

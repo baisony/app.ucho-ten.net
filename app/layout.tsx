@@ -8,9 +8,10 @@ import { Providers } from "./providers";
 import { siteConfig } from "@/config/site";
 import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
-import { config } from '@fortawesome/fontawesome-svg-core' //追加
-import '@fortawesome/fontawesome-svg-core/styles.css' //追加
-config.autoAddCss = false //追加
+import { config } from '@fortawesome/fontawesome-svg-core'; //追加
+import '@fortawesome/fontawesome-svg-core/styles.css'; //追加
+config.autoAddCss = false; //追加
+export const runtime = 'edge';
 
 export const metadata: Metadata = {
   title: {

@@ -74,7 +74,7 @@ export default function Home() {
           Web App [ legacy ]
         </Link>
       </div>
-      <div className={"inline-block max-w-md text-center justify-center mt-14"}>
+      <div className={"inline-block max-w-full md:max-w-md text-center justify-center mt-14"}>
         <Carousel
           autoPlay={true}
           infiniteLoop={true}

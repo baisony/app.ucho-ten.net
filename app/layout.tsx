@@ -37,21 +37,31 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <head />
-      <body
-        className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
-        )}
-      >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
-            <Navbar />
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
-            <footer className="w-full flex items-center justify-center py-3">
-              <Link
+    <head>
+      <title>Ucho-ten Bluesky App</title>
+      <meta property="og:title" content="Ucho-ten Bluesky App" />
+      <meta property="og:description" content="Ucho-ten is ZEN." />
+      <meta property="og:image" content="/ogp.jpg" />
+      <meta property="og:url" content="https://app.ucho-ten.net/" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Ucho-ten Bluesky App" />
+      <meta name="twitter:description" content="Ucho-ten is ZEN." />
+      <meta name="twitter:image" content="/ogp.jpg" />
+    </head>
+    <body
+      className={clsx(
+        "min-h-screen bg-background font-sans antialiased",
+        fontSans.variable
+      )}
+    >
+    <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
+      <div className="relative flex flex-col h-screen">
+        <Navbar />
+        <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
+          {children}
+        </main>
+        <footer className="w-full flex items-center justify-center py-3">
+        <Link
                 isExternal
                 className="flex items-center gap-1 text-current"
                 href="https://nextui-docs-v2.vercel.app?utm_source=next-app-template"

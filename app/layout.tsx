@@ -43,12 +43,12 @@ export default function RootLayout({
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Ucho-ten Bluesky App" />
       <meta property="og:description" content="Ucho-ten is ZEN." />
-      <meta property="og:image" content="/ogp.jpg" />
+      <meta property="og:image" content="https://app.ucho-ten.net/ogp.jpg" />
       <meta property="og:url" content="https://app.ucho-ten.net/" />
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Ucho-ten Bluesky App" />
       <meta name="twitter:description" content="Ucho-ten is ZEN." />
-      <meta name="twitter:image" content="/ogp.jpg" />
+      <meta name="twitter:image" content="https://app.ucho-ten.net/ogp.jpg" />
     </head>
     <body
       className={clsx(

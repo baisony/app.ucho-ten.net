@@ -39,6 +39,8 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
     <head>
       <title>Ucho-ten Bluesky App</title>
+      <link rel="icon" href="/favicon.ico" />
+      <meta property="og:type" content="website" />
       <meta property="og:title" content="Ucho-ten Bluesky App" />
       <meta property="og:description" content="Ucho-ten is ZEN." />
       <meta property="og:image" content="/ogp.jpg" />

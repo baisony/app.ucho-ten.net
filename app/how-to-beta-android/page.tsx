@@ -1,5 +1,6 @@
-import { subtitle, title } from "@/components/primitives";
 import { Card } from "@nextui-org/card";
+
+import { subtitle, title } from "@/components/primitives";
 
 export default function HowToBetaAndroid() {
   return (
@@ -13,30 +14,30 @@ export default function HowToBetaAndroid() {
         <Card className={"mt-14 p-6"}>
           <div className={subtitle()}>1. Access to Google Group, and join group</div>
           <li className={subtitle()}>1. Google Group にアクセス後、「グループに参加」</li>
-          <a href={"https://groups.google.com/g/ucho-ten-for-android-beta"} target={"_blank"}
-             className={"text-blue-700"}>https://groups.google.com/g/ucho-ten-for-android-beta</a>
+          <a className={"text-blue-700"} href={"https://groups.google.com/g/ucho-ten-for-android-beta"}
+             rel="noreferrer" target={"_blank"}>https://groups.google.com/g/ucho-ten-for-android-beta</a>
           <div>
             Please be assured that the names and e-mail addresses of all other participants will not be viewable.
           </div>
           <div>なお、他の参加者の名前やメールアドレスは一切閲覧できないようにしていますのでご安心ください。</div>
-          <li className={subtitle()}>or, Search Group for "Ucho-ten for Android beta"</li>
+          <li className={subtitle()}>or, Search Group for &#34;Ucho-ten for Android beta&#34;</li>
           <li className={subtitle()}>または「Ucho-ten for Android beta」と検索し、参加</li>
           <a href={"https://groups.google.com/my-groups"}
              target={"_blank"}
-             className={"text-blue-700"}
+             className={"text-blue-700"} rel="noreferrer"
           >https://groups.google.com/my-groups</a>
         </Card>
         <Card className={"mt-14 p-6"}>
           <li className={subtitle()}>2. Access to Google Play beta link</li>
           <li className={subtitle()}>2. 下記のリンクからベータテスターとして登録</li>
           <a href={process.env.NEXT_PUBLIC_ANDROID_JOIN_BETA_URL} target={"_blank"}
-             className={"text-blue-700"}>{process.env.NEXT_PUBLIC_ANDROID_JOIN_BETA_URL}</a>
+             className={"text-blue-700"} rel="noreferrer">{process.env.NEXT_PUBLIC_ANDROID_JOIN_BETA_URL}</a>
         </Card>
         <Card className={"mt-14 p-6"}>
           <li className={subtitle()}>3. Install App</li>
           <li className={subtitle()}>3. アプリをインストール</li>
           <a href={process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL} target={"_blank"}
-             className={"text-blue-700"}>{process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL}</a>
+             className={"text-blue-700"} rel="noreferrer">{process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL}</a>
         </Card>
       </div>
     </div>

@@ -50,7 +50,7 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href={process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL}
+          href="/how-to-beta-android"
         >
           <FontAwesomeIcon icon={faAndroid} size={"xl"} />
           Google Play [beta]

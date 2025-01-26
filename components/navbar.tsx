@@ -101,7 +101,7 @@ export const Navbar = () => {
             //href={siteConfig.links.github}
             href={""}
           >
-            Coming soon
+            Released Ucho-ten App!!!!
           </Link>
         </NavbarItem>
       </NavbarContent>

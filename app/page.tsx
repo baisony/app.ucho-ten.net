@@ -50,10 +50,10 @@ export default function Home() {
         <Link
           isExternal
           className={buttonStyles({ variant: "bordered", radius: "full" })}
-          href="/how-to-beta-android"
+          href={process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL}
         >
           <FontAwesomeIcon icon={faAndroid} size={"xl"} />
-          Google Play [beta]
+          Google Play
         </Link>
         <Link
           isExternal
@@ -61,7 +61,7 @@ export default function Home() {
           href={process.env.NEXT_PUBLIC_IOS_TESTFLIGHT_URL}
         >
           <FontAwesomeIcon icon={faApple} size={"xl"} />
-          App Store [beta]
+          App Store
         </Link>
       </div>
       <div className="flex gap-3">

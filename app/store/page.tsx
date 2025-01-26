@@ -10,9 +10,9 @@ export default function StorePage() {
     const userAgent = navigator.userAgent.toLowerCase()
 
     if (userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('ipod')) {
-      window.location.href = 'https://apps.apple.com/app/ucho-ten/id6450390893'
+      window.location.href = `${process.env.NEXT_PUBLIC_IOS_TESTFLIGHT_URL}`;
     } else if (userAgent.includes('android')) {
-      window.location.href = 'https://play.google.com/store/apps/details?id=net.ucho_ten.app'
+      window.location.href = `${process.env.NEXT_PUBLIC_ANDROID_PLAYSTORE_URL}`;
     } else {
       router.push('/')
     }
